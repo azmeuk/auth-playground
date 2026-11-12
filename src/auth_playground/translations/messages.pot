@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-11-12 09:54+0100\n"
+"POT-Creation-Date: 2026-11-12 15:02+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,8 +93,8 @@ msgstr ""
 
 #: src/auth_playground/endpoints.py:199 src/auth_playground/oauth.py:135
 #: src/auth_playground/oauth.py:294 src/auth_playground/oauth.py:368
-#: src/auth_playground/oauth.py:464 src/auth_playground/oauth.py:588
-#: src/auth_playground/oauth.py:653 src/auth_playground/oauth.py:700
+#: src/auth_playground/oauth.py:464 src/auth_playground/oauth.py:591
+#: src/auth_playground/oauth.py:656 src/auth_playground/oauth.py:714
 msgid "Invalid request"
 msgstr ""
 
@@ -628,80 +628,92 @@ msgstr ""
 msgid "The client obtained tokens."
 msgstr ""
 
-#: src/auth_playground/oauth.py:511 src/auth_playground/oauth.py:579
+#: src/auth_playground/oauth.py:509
+#, python-brace-format
+msgid "The tokens are not kept. {reason}"
+msgstr ""
+
+#: src/auth_playground/oauth.py:516 src/auth_playground/oauth.py:582
 msgid "You have been successfully logged in."
 msgstr ""
 
-#: src/auth_playground/oauth.py:514
+#: src/auth_playground/oauth.py:519
 #, python-brace-format
 msgid "Tokens obtained for {username}."
 msgstr ""
 
-#: src/auth_playground/oauth.py:531
+#: src/auth_playground/oauth.py:538
 #, python-brace-format
 msgid "The signing keys of the provider could not be fetched: {error}"
 msgstr ""
 
-#: src/auth_playground/oauth.py:537 src/auth_playground/oauth.py:560
+#: src/auth_playground/oauth.py:541 src/auth_playground/oauth.py:563
 #, python-brace-format
 msgid "The ID token is not valid: {error}"
 msgstr ""
 
-#: src/auth_playground/oauth.py:553 src/auth_playground/oauth.py:564
+#: src/auth_playground/oauth.py:556 src/auth_playground/oauth.py:567
 #, python-brace-format
 msgid "An error happened during login: {error}"
 msgstr ""
 
-#: src/auth_playground/oauth.py:592
+#: src/auth_playground/oauth.py:595
 msgid "The tokens were forgotten"
 msgstr ""
 
-#: src/auth_playground/oauth.py:594
+#: src/auth_playground/oauth.py:597
 msgid "You have been logged out"
 msgstr ""
 
-#: src/auth_playground/oauth.py:644
+#: src/auth_playground/oauth.py:647
 msgid "You have been logged out from the server"
 msgstr ""
 
-#: src/auth_playground/oauth.py:658
+#: src/auth_playground/oauth.py:661
 msgid "No refresh token available"
 msgstr ""
 
-#: src/auth_playground/oauth.py:670
-msgid "Token successfully refreshed"
-msgstr ""
-
-#: src/auth_playground/oauth.py:675
+#: src/auth_playground/oauth.py:673
 #, python-brace-format
 msgid "An error happened during token refresh: {error}"
 msgstr ""
 
-#: src/auth_playground/oauth.py:704
+#: src/auth_playground/oauth.py:684
+#, python-brace-format
+msgid ""
+"The refresh response is rejected and the previous tokens are kept. If the"
+" provider rotates refresh tokens, sign in again. {reason}"
+msgstr ""
+
+#: src/auth_playground/oauth.py:694
+msgid "Token successfully refreshed"
+msgstr ""
+
+#: src/auth_playground/oauth.py:718
 msgid "No access token available"
 msgstr ""
 
-#: src/auth_playground/oauth.py:708
+#: src/auth_playground/oauth.py:722
 msgid "These tokens are not tied to a user."
 msgstr ""
 
-#: src/auth_playground/oauth.py:713
+#: src/auth_playground/oauth.py:727
 msgid "The provider has no UserInfo endpoint."
 msgstr ""
 
-#: src/auth_playground/oauth.py:723
+#: src/auth_playground/oauth.py:737
 msgid "The response is not JSON."
 msgstr ""
 
-#: src/auth_playground/oauth.py:727
+#: src/auth_playground/oauth.py:741
 msgid "The response is not a JSON object."
 msgstr ""
 
-#: src/auth_playground/oauth.py:734
+#: src/auth_playground/oauth.py:748
 msgid "User info received"
 msgstr ""
 
-#: src/auth_playground/oauth.py:738
+#: src/auth_playground/oauth.py:752
 #, python-brace-format
 msgid "An error happened during the UserInfo request: {error}"
 msgstr ""
